@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://leafletjs.com/examples/choropleth/example.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Choropleth Tutorial - Leaflet</title>
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://leafletjs.com/examples/choropleth/docs/images/favicon.ico">
+
+	<link rel="stylesheet" href="./Choropleth Tutorial - Leaflet_files/leaflet.css">
+	<script src="./Choropleth Tutorial - Leaflet_files/leaflet.js.download"></script>
+
+
+	<style>
+		#map {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+
+	<style>#map { width: 800px; height: 500px; }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+</head>
+<body>
+
+<div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative; outline: none;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(314px, -326px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(545px, -24px, 0px) scale(2);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(545px, -24px, 0px) scale(1);"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/44.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-550px, -20px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/44(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-806px, -20px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/43.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-550px, -276px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/43(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-806px, -276px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/45.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-806px, 236px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/45(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-550px, 236px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/44(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-1062px, -20px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/44(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-294px, -20px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/45(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-1062px, 236px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/43(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-1062px, -276px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/43(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-294px, -276px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/45(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-294px, 236px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/46.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-806px, 492px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/46(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-550px, 492px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/47.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-806px, 748px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/47(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-550px, 748px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/46(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-1062px, 492px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/46(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-294px, 492px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/47(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-1062px, 748px, 0px); opacity: 1;"><img alt="" role="presentation" src="./Choropleth Tutorial - Leaflet_files/47(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-294px, 748px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="960" height="600" viewBox="-394 276 960 600" style="transform: translate3d(-394px, 276px, 0px);"><g><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#800026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FED976" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#800026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FED976" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#800026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3" fill="#800026" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd" d="M0 0" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M568 274L568 670L432 670L432 441L411 426L395 401L420 373L422 358L418 306L407 292L403 274z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M568 670L568 878L466 878L461 859L449 851L432 796L415 769L423 751L426 726L433 717L422 705L425 683L420 673L432 670z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd" d="M403 274L407 292L418 306L422 358L-260 357L-260 274z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd" d="M-396 274L-260 274L-259 480L-396 479z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd" d="M-396 878L-396 479L-261 480L-260 878z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd" d="M-260 357L422 358L420 373L395 401L411 426L432 441L432 670L420 673L425 683L422 705L433 717L426 726L423 751L415 769L432 796L416 793L410 775L362 752L319 752L306 749L295 761L248 739L245 733L-260 732L-261 480L-259 480z" stroke-dasharray="3"></path><path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd" d="M-194 732L245 733L248 739L295 761L306 749L319 752L362 752L410 775L416 793L432 796L449 851L461 859L466 878L-260 878L-260 732z" stroke-dasharray="3"></path></g></svg></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(7259px, 11884px, 0px) scale(64);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://leafletjs.com/examples/choropleth/example.html#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://leafletjs.com/examples/choropleth/example.html#" title="Zoom out" role="button" aria-label="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="info leaflet-control"><h4>US Population Density</h4>Hover over a state</div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="info legend leaflet-control"><i style="background:#FFEDA0"></i> 0–10<br><i style="background:#FED976"></i> 10–20<br><i style="background:#FEB24C"></i> 20–50<br><i style="background:#FD8D3C"></i> 50–100<br><i style="background:#FC4E2A"></i> 100–200<br><i style="background:#E31A1C"></i> 200–500<br><i style="background:#BD0026"></i> 500–1000<br><i style="background:#800026"></i> 1000+</div><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com/">Mapbox</a>, Population data © <a href="http://census.gov/">US Census Bureau</a></div></div></div></div>
+
+<script type="text/javascript" src="./Choropleth Tutorial - Leaflet_files/us-states.js.download"></script>
+
+<script type="text/javascript">
+
+	var map = L.map('map').setView([37.8, -96], 4);
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+
+	// control that shows state info on hover
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+			'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+			: 'Hover over a state');
+	};
+
+	info.addTo(map);
+
+
+	// get color depending on population density value
+	function getColor(d) {
+		return d > 1000 ? '#800026' :
+				d > 500  ? '#BD0026' :
+				d > 200  ? '#E31A1C' :
+				d > 100  ? '#FC4E2A' :
+				d > 50   ? '#FD8D3C' :
+				d > 20   ? '#FEB24C' :
+				d > 10   ? '#FED976' :
+							'#FFEDA0';
+	}
+
+	function style(feature) {
+		return {
+			weight: 2,
+			opacity: 1,
+			color: 'white',
+			dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(feature.properties.density)
+		};
+	}
+
+	function highlightFeature(e) {
+		var layer = e.target;
+
+		layer.setStyle({
+			weight: 5,
+			color: '#666',
+			dashArray: '',
+			fillOpacity: 0.7
+		});
+
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+		}
+
+		info.update(layer.feature.properties);
+	}
+
+	var geojson;
+
+	function resetHighlight(e) {
+		geojson.resetStyle(e.target);
+		info.update();
+	}
+
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+
+	geojson = L.geoJson(statesData, {
+		style: style,
+		onEachFeature: onEachFeature
+	}).addTo(map);
+
+	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
+
+
+	var legend = L.control({position: 'bottomright'});
+
+	legend.onAdd = function (map) {
+
+		var div = L.DomUtil.create('div', 'info legend'),
+			grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+			labels = [],
+			from, to;
+
+		for (var i = 0; i < grades.length; i++) {
+			from = grades[i];
+			to = grades[i + 1];
+
+			labels.push(
+				'<i style="background:' + getColor(from + 1) + '"></i> ' +
+				from + (to ? '&ndash;' + to : '+'));
+		}
+
+		div.innerHTML = labels.join('<br>');
+		return div;
+	};
+
+	legend.addTo(map);
+
+</script>
+
+
+
+
+
+</body></html>
