@@ -1,0 +1,13 @@
+
+```{r}
+library(leaflet)
+
+```
+
+```{r}
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+ setView(103.7732232,1.4293702, zoom = 16)
+    
+m  # Print the map
+```
