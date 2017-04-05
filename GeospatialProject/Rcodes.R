@@ -1,10 +1,3 @@
-library(leaflet)
-
-
-# Map
-m<-leaflet(data=shops)%>% addTiles()%>%
-  addMarkers(~LONGITUDE,~LATITUDE,
-             popup=~POI_NAME)
 
 --------
   m <- leaflet() %>%
@@ -18,8 +11,8 @@ m%>%addTiles() %>%  # Add default OpenStreetMap map tiles
 library(rgdal)
 roads <- readOGR(dsn="E:/IS415/GeospatialProject/shapefile", layer="roads")
 mpsz_svy21 <- readOGR(dsn="E:/IS415/GeospatialProject/shapefile", layer="MP14_SUBZONE_NO_SEA_PL")
-leaflet(data = mpsz_svy21) %>% addTiles() %>%
-  addPolygons(fillColor = topo.colors(10, alpha = NULL), stroke = FALSE)
+
+
 
 library(maptools)
 shops <- read.csv ("/IS415/GeospatialProject/shops.csv")
@@ -28,7 +21,14 @@ sp_shops <- SpatialPointsDataFrame(coords = coords, data = shops, proj4string = 
 sp_shops_proj <- spTransform(sp_shops, CRS("+init=epsg:3414"))
 plot(sp_shops)
 summary(sp_shops)
+
+library(leaflet)
+m<-leaflet(data=shops)%>% addTiles()%>%
+  addMarkers(~LONGITUDE,~LATITUDE,
+             popup=~POI_NAME)
+m
+
 library(maptools)
 library(spatstat)
 library(rgeos)
-buff2km <- gBuffer(sp_shops_proj, byid = TRUE, width = 2000)
+#buff2km <- gBuffer(plot.HDB, byid = TRUE, width = 2000)
