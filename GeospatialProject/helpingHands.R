@@ -80,7 +80,7 @@ ui<-fluidPage(
                       
                         
               
-             tabPanel(title="Statistics"),
+             tabPanel(title="Statistics",
              fluidRow(column(8,""), 
                       column(4,fluidPage(tags$h4("HISTOGRAM: Distribution of public amenities according to number and type of public amenities."),
 tags$br(),
@@ -92,6 +92,7 @@ tags$h6( " <Fig2>Public Amenities[X],  Postal Code [Y] ")
 )
            )
   )
+)
             
  
              
