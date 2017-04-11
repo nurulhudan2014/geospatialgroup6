@@ -31,10 +31,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>21487.38244681555806892</xmin>
-      <ymin>45606.02637229477841174</ymin>
-      <xmax>21624.73599964197637746</xmax>
-      <ymax>45702.35640967090876075</ymax>
+      <xmin>21441.27538898609782336</xmin>
+      <ymin>45633.0117184773698682</ymin>
+      <xmax>21503.76890203023504</xmax>
+      <ymax>45663.86928052318398841</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -62,8 +62,8 @@
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="CoveredLinkWay20170401020439971"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="RoadCrossing20170401015603637"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="MP14_SUBZONE_NO_SEA_PL20170401015010213"/>
-      <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20170408165743387"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overheadbridge20170408193240185"/>
+      <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20170408165743387"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="CostalOutline20170330172115059"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="shops20170405123748000"/>
       <layer_coordinate_transform destAuthId="USER:100000" srcAuthId="EPSG:3414" srcDatumTransform="-1" destDatumTransform="-1" layerid="Overheadbridge20170408165431941"/>
@@ -132,6 +132,12 @@
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>21231.05108731162181357</xmin>
+        <ymin>45457.50155417771020439</ymin>
+        <xmax>22950.51572220992238726</xmax>
+        <ymax>46241.24959654056146974</ymax>
+      </extent>
       <id>CoveredLinkway20170408193240154</id>
       <datasource>./shapefile/CoveredLinkway.shp</datasource>
       <keywordList>
@@ -214,7 +220,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="OBJECTID" index="0" name=""/>
       </aliases>
@@ -224,10 +230,10 @@
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="572419120">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -437,6 +443,12 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>21370.18750466965138912</xmin>
+        <ymin>45782.31943013705313206</ymin>
+        <xmax>22972.44270630718892789</xmax>
+        <ymax>46249.89114181212789845</ymax>
+      </extent>
       <id>Overheadbridge20170408193240185</id>
       <datasource>./shapefile/Overheadbridge.shp</datasource>
       <keywordList>
@@ -523,7 +535,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="TYP_CD" index="0" name=""/>
         <alias field="TYP_CD_DES" index="1" name=""/>
@@ -534,10 +546,10 @@
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="460720344">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -548,6 +560,12 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>20861.34674025047570467</xmin>
+        <ymin>45470.31930396147072315</ymin>
+        <xmax>23005.05839983491387102</xmax>
+        <ymax>46326.87625670745183015</ymax>
+      </extent>
       <id>RoadCross20170408193240217</id>
       <datasource>./shapefile/RoadCross.shp</datasource>
       <keywordList>
@@ -634,7 +652,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="OBJECTID" index="0" name=""/>
       </aliases>
@@ -644,10 +662,10 @@
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -658,6 +676,12 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>20856.60132995340973139</xmin>
+        <ymin>45469.68064191378653049</ymin>
+        <xmax>22991.07180509436875582</xmax>
+        <ymax>46318.92379532381892204</ymax>
+      </extent>
       <id>TrafficSignals20170408165007455</id>
       <datasource>./shapefile/TrafficSignals.shp</datasource>
       <keywordList>
@@ -751,7 +775,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="BEARG_NUM" index="0" name=""/>
         <alias field="BEARG_NUM_" index="1" name=""/>
@@ -762,10 +786,10 @@
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="694446455">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1195,6 +1219,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -1220,7 +1245,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="OBJECTID" index="0" name=""/>
       </aliases>
@@ -1233,10 +1258,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1289,27 +1314,39 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
+        <value>CoveredLinkway20170408193240154</value>
         <value>MP14_SUBZONE_NO_SEA_PL20170401015010213</value>
+        <value>Overheadbridge20170408193240185</value>
+        <value>RoadCross20170408193240217</value>
+        <value>TrafficSignals20170408165007455</value>
         <value>WoodgroveNeighbourhood20170401015123527</value>
         <value>footpaths20170408164234653</value>
-        <value>TrafficSignals20170408165007455</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
+        <value>enabled</value>
         <value>disabled</value>
         <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>disabled</value>
         <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <IntersectionSnapping type="bool">true</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
-        <value>2</value>
+        <value>1</value>
         <value>2</value>
         <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>2</value>
         <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -1318,6 +1355,9 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">0.1</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>

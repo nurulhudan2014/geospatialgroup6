@@ -31,10 +31,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>21487.38244681555806892</xmin>
-      <ymin>45606.02637229477841174</ymin>
-      <xmax>21624.73599964197637746</xmax>
-      <ymax>45702.35640967090876075</ymax>
+      <xmin>22544.27696870221188874</xmin>
+      <ymin>45810.18445783739298349</ymin>
+      <xmax>22655.61760426987530082</xmax>
+      <ymax>45888.27088054005434969</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -132,8 +132,14 @@
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>21231.05108731162181357</xmin>
+        <ymin>45457.50155417771020439</ymin>
+        <xmax>22950.51572220992238726</xmax>
+        <ymax>46241.24959654056146974</ymax>
+      </extent>
       <id>CoveredLinkway20170408193240154</id>
-      <datasource>../../shapefile/shapefile/CoveredLinkway.shp</datasource>
+      <datasource>./shapefile/CoveredLinkway.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -437,8 +443,14 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>21370.18750466965138912</xmin>
+        <ymin>45782.31943013705313206</ymin>
+        <xmax>22972.44270630718892789</xmax>
+        <ymax>46249.89114181212789845</ymax>
+      </extent>
       <id>Overheadbridge20170408193240185</id>
-      <datasource>../../shapefile/shapefile/Overheadbridge.shp</datasource>
+      <datasource>./shapefile/Overheadbridge.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -548,8 +560,14 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>20861.34674025047570467</xmin>
+        <ymin>45470.31930396147072315</ymin>
+        <xmax>23005.05839983491387102</xmax>
+        <ymax>46326.87625670745183015</ymax>
+      </extent>
       <id>RoadCross20170408193240217</id>
-      <datasource>../../shapefile/shapefile/RoadCross.shp</datasource>
+      <datasource>./shapefile/RoadCross.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -658,8 +676,14 @@
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>20856.60132995340973139</xmin>
+        <ymin>45469.68064191378653049</ymin>
+        <xmax>22991.07180509436875582</xmax>
+        <ymax>46318.92379532381892204</ymax>
+      </extent>
       <id>TrafficSignals20170408165007455</id>
-      <datasource>../../shapefile/shapefile/TrafficSignals.shp</datasource>
+      <datasource>./shapefile/TrafficSignals.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -961,7 +985,7 @@
       <extent>
         <xmin>20834.80969733771053143</xmin>
         <ymin>45360.9561513371518231</ymin>
-        <xmax>22990.33038259118620772</xmax>
+        <xmax>22991.1163595444704697</xmax>
         <ymax>46314.69598934184614336</ymax>
       </extent>
       <id>footpaths20170408164234653</id>
@@ -1290,27 +1314,39 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
+        <value>CoveredLinkway20170408193240154</value>
         <value>MP14_SUBZONE_NO_SEA_PL20170401015010213</value>
+        <value>Overheadbridge20170408193240185</value>
+        <value>RoadCross20170408193240217</value>
+        <value>TrafficSignals20170408165007455</value>
         <value>WoodgroveNeighbourhood20170401015123527</value>
         <value>footpaths20170408164234653</value>
-        <value>TrafficSignals20170408165007455</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
+        <value>enabled</value>
         <value>disabled</value>
         <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>disabled</value>
         <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <IntersectionSnapping type="bool">true</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
-        <value>2</value>
+        <value>1</value>
         <value>2</value>
         <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>2</value>
         <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -1319,6 +1355,9 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">0.1</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
